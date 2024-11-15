@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoVeda - Carbon Footprint Calculator & Recycling Guide</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>EcoVeda</h1>
+            <nav>
+                <ul>
+                    <li><a href="#calculator">Calculator</a></li>
+                    <li><a href="#recycling">Recycling Guide</a></li>
+                    <li><a href="#waste-management">Waste Management</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="calculator" class="calculator-section">
+        <div class="container">
+            <h2>Carbon Footprint Calculator</h2>
+            <p>Calculate your carbon footprint by entering details below:</p>
+            <form id="footprintForm">
+                <label for="transport">Transportation (km/week):</label>
+                <input type="number" id="transport" name="transport" min="0" step="1">
+
+                <label for="electricity">Electricity (kWh/month):</label>
+                <input type="number" id="electricity" name="electricity" min="0" step="1">
+
+                <label for="meat">Meat Consumption (days/week):</label>
+                <input type="number" id="meat" name="meat" min="0" step="1">
+
+                <button type="button" onclick="calculateFootprint()">Calculate</button>
+            </form>
+            <p id="result"></p>
+        </div>
+    </section>
+
+    <section id="recycling" class="recycling-section">
+        <div class="container">
+            <h2>Recycling Guide</h2>
+            <p>Learn how to recycle and reduce waste effectively:</p>
+            <ul>
+                <li>Paper: Recycle office paper, newspapers, and cardboard.</li>
+                <li>Plastics: Check for recycling codes 1-7 and follow guidelines.</li>
+                <li>Glass: Separate clear, brown, and green glass for recycling.</li>
+                <li>Metal: Recycle aluminum cans, steel, and copper items.</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="waste-management" class="waste-management-section">
+        <div class="container">
+            <h2>Waste Management Tips</h2>
+            <p>Reduce waste and protect the environment by following these tips:</p>
+            <ul>
+                <li>Composting: Turn organic waste into rich compost for gardening.</li>
+                <li>Reuse: Use reusable bags, bottles, and containers to minimize waste.</li>
+                <li>Donate: Give away old clothes, electronics, and furniture instead of discarding them.</li>
+                <li>Repair: Fix broken items rather than immediately replacing them.</li>
+            </ul>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>© 2024 EcoVeda. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
